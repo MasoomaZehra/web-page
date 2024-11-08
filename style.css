@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    border: 5px solid black;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+}
+
+.hero {
+    background: rgb(207, 20, 20);
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.hero button {
+    padding: 0.8rem 1.5rem;
+    background-color: black;
+    color: white;
+    border: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+}
+.testimonial-author{
+    font-size: 1rem;
+    color: #c5c1c1;
+    font-weight: bold;
+    
+    padding-left: 77rem;
+  }
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+
+
+}
+
+#contact label,
+#contact input,
+#contact textarea,
+#contact button {
+
+    margin: 0.4rem 0;
+}
+#contact input,
+#contact textarea,
+#contact button {
+  margin: 0.3rem 0;
+  padding: 0.65rem 1rem;
+  width: 100%; 
+  border: 1px solid gray;
+  border-radius: 3px; 
+  font-size: 5px;
+}
+#contact button {
+    background-color: rgb(82, 78, 78);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #contact button:hover {
+    background-color: rgb(44, 43, 43); 
+  }
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .hero {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero button {
+        padding: 0.5rem 1rem;
+    }
+}
